@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="site">
+        <section class="siteHeader">
+            <div class="titulo">
+                <h1>Market Express</h1>
+            </div>
+            <div class="login">
+                <div class="activo" id="div_inactivo">
+                    <input type="text" placeholder="usuario" id="txt_user">
+                    <input type="password" placeholder="contraseña" id="txt_password">
+                    <input type="button" value="Iniciar Sesión" id="btnLogIn">
+                    <h5 id="messegge"></h5>
+                </div>
+                <div class="inactivo" id="div_activo">
+                    <p id="p_activeUser">Hola</p>
+                    <input type="button" value="Cerrar Sesión" id="btnLogOut">
+                </div>
+            </div>
+        </section>
+        <section class="siteContent activo" id="divSite">
+            <div class="contentProducts">
+                <div id="div_contentProducts"></div>
+            </div>
+
+            <div class="contentCompra">
+                <div>
+                    <input type="button" id="btnRestablecerS" value="Restablecer Stock"></input>
+                </div>
+                <div class="tblEncabezados">
+                    <table>
+                        <tr>
+                            <th style="width: 50px;">ID</th>
+                            <th style="width: 100px;">PRODUCTO</th>
+                            <th style="width: 50px;">CANT.</th>
+                            <th style="width: 170px;">AGREGAR/QUITAR</th>
+                            <th style="width: 120px;">VALOR</th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="contentDetalleC" id="div_detalleCompra">Carrito vacio</div>
+                <div class="contentDetalleT" id="div_totalCompra"></div>
+                <div class="activo">
+                    <input type="button" disabled="true" value="Pagar" id="btnPagar">
+                </div>
+                <div class="msgFinalCompra">
+                    <p id="lblmensajeCompra"></p>
+                </div>
+            </div>
+        </section>
+        <section class="siteContent inactivo" id="divTemporal">
+            <div class="siteWait">
+                <h1>Procesando tu Compra...</h1>
+            </div>
+        </section>
+    </div>
+
+    <template id="pTemplate">
+        <div class="productElement">
+            <img src="" alt="">
+            <h5>Titulo</h5>
+            <div>$<p>Precio</p></div>
+            <p>Disponible</p>
+            <button class="productBtn">Comprar</button>
+            <h6>uCarro</h6>
+        </div>
+    </template>
+    <template id="cTemplate">
+        <table>
+            <tr style="padding: .2rem;">
+                <th style="width: 50px;" scope="row">id</th>
+                <td style="width: 100px;">Café</td>
+                <td style="width: 50px;">1</td>
+                <td style="width: 170px;">
+                    <button class="btnAdd">+</button>
+                    <button class="btnRemove">-</button>
+                </td>
+                <td style="width: 120px;"> $ <span>500</span></td>
+            </tr>
+        </table>
+    </template>
+    <template id="tTemplate">
+        <table>
+            <tr style="background-color: lightgray;">
+                <th>Total productos:</th><td>10</td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="btnRemove" id="vaciar-carrito">Vaciar Carro</button>
+                </td>
+            </tr>
+            <tr><td>Valor Parcial + Valor Unitario $ <span>5000</span></td></tr>
+            <tr><td>Envío $ <span>5000</span></td></tr>
+            <tr><td>Valor Total $ <span>5000</span></td></tr>
+        </table>
+
+        
+        
+        
+    </template>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

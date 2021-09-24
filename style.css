@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    /* Esta propiedad afina la tipografia del nuestro sitio */
+    -moz-osx-font-smoothing: grayscale;
+    /* Esta propiedad afina la tipografia del nuestro sitio */ 
+    
+}
+.site{
+    width: 100%;
+    display: block;
+}
+.siteHeader{
+    padding: .5rem;
+    background-color:gray;
+    display: flex;
+    width: 100%;
+}
+.siteHeader .titulo {
+    width: 60%;
+}
+.siteHeader .titulo h1{
+    
+    padding-top: 1rem;
+    margin-left: 0.6rem;
+    
+}
+
+.siteHeader .login{
+    padding-top: .5rem;
+    margin-left: 0.6rem;
+    width: 40%;
+    
+}
+#div_activo p{
+margin-top: .5rem;
+color: #000;
+font-weight: bold;
+}
+
+.login div{
+    justify-content: right;
+    padding-top: .5rem;
+    margin-left: 0.6rem;
+}
+.login input{
+    padding: .2rem;
+    margin: .2rem;
+}
+
+.siteContent{
+    width: 100%;
+    display: flex;
+}
+
+.siteContent .contentProducts{
+    width: 70%;
+    border-right: solid;
+    border-right-color: lightslategray;
+}
+
+.siteContent .contentProducts div{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.siteContent .contentProducts div .productElement
+{
+    display: block;
+    background-color:lightgrey;
+    border-radius: .5rem;
+    padding: 1rem;
+    margin: .5rem;
+    justify-content: center;
+}
+
+.siteContent .contentProducts div .productElement h5
+{
+    color:darkslategray;
+    font-size: medium;
+    margin: .2rem;
+}
+.siteContent .contentProducts div .productElement p
+{
+    font-weight: bold;
+    font-size: small;
+    margin: .2rem;
+}
+.siteContent .contentProducts div .productElement button
+{
+    font-weight: bold;
+    font-size: small;
+    width: 100%;
+    padding: .5rem;
+}
+
+.contentCompra .tblEncabezados{
+    margin-left: .5rem;
+    padding: .2rem;
+}
+
+.contentCompra .tblEncabezados th{
+    padding: .2rem;
+    background-color: lightgray;
+}
+.contentDetalleC{
+    margin-left: .5rem;
+    padding: .2rem;
+}
+
+.contentDetalleT{
+    margin-left: .5rem;
+    padding: .2rem;
+}
+.contentDetalleT th,td{
+   text-align: left;
+}
+
+.contentDetalleT button{
+    
+    padding: .2rem;
+    font-weight: bold;
+}
+
+.contentDetalleC td,th{
+    text-align: center;
+    
+}
+
+.siteContent .contentCompra div{
+    width: 90%;
+}
+.siteContent .contentCompra input{
+    width: 100%;
+    padding: 1rem;
+    margin:.5rem;
+}
+
+.activo{
+display: flex; 
+}
+
+.inactivo{
+    display: none;
+}
+
+.siteWait
+{
+    text-align: center;
+    width: 100%;
+    opacity: .5;
+    margin-top: 4rem;
+}
+.siteWait h1{
+    text-align: center;
+    width: 100%;
+    opacity: .5;
+    margin-top: 4rem;
+}
+.msgFinalCompra p
+{
+    width: 100%;
+    text-align: center;
+}
